@@ -7,7 +7,7 @@ int? quantity = null;
 
 while(quantity == null)
 {
-    Console.WriteLine("Insert the number of strings to be processed");
+    Console.WriteLine("Insert the number of strings to be processed.");
     string? quantityText = Console.ReadLine();
     int tmpQuantity = 0;
     bool isValid = int.TryParse(quantityText, out tmpQuantity);
@@ -27,6 +27,8 @@ while (counter < quantity)
         counter++;
     }
 }
+
+Console.WriteLine("Result:");
 
 var results = ProcessStrings.SortingOperations(stringArray);
 foreach (var result in results)
